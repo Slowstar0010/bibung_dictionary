@@ -21,6 +21,7 @@ body {
     display: flex;
     background-color: white;
     position: absolute;
+    bottom: 0px;
 }
 
 .Main_Index__Box {
@@ -57,61 +58,85 @@ body {
 }
 
 .Index_Box_4 {
-    transform: rotateZ(0deg);
+    transform: rotateZ(260deg);
+    top: 260px;
+    left: 16px;
 }
 
 .Index_Box_5 {
-    transform: rotateZ(0deg);
+    transform: rotateZ(280deg);
+    top: 140px;
+    left: -55px;
 }
 
 .Index_Box_6 {
-    transform: rotateZ(0deg);
+    transform: rotateZ(300deg);
+    top: 30px;
+    left: -85px;
 }
 
 .Index_Box_7 {
-    transform: rotateZ(0deg);
+    transform: rotateZ(320deg);
+    top: -55px;
+    left: -80px;
 }
 
 .Index_Box_8 {
-    transform: rotateZ(0deg);
+    transform: rotateZ(340deg);
+    top: -115px;
+    left: -45px;
 }
 
 .Index_Box_9 {
     transform: rotateZ(0deg);
+    top: -135px;
+    left: -5px;
 }
 
 .Index_Box_10 {
-    transform: rotateZ(0deg);
+    transform: rotateZ(20deg);
+    top: -115px;
+    left: 35px;
 }
 
 .Index_Box_11 {
-    transform: rotateZ(0deg);
+    transform: rotateZ(40deg);
+    top: -55px;
+    left: 65px;
 }
 
 .Index_Box_12 {
-    transform: rotateZ(0deg);
+    transform: rotateZ(60deg);
+    top: 30px;
+    left: 65px;
 }
 
 .Index_Box_13 {
-    transform: rotateZ(0deg);
+    transform: rotateZ(80deg);
+    top: 140px;
+    left: 35px;
 }
 
 .Index_Box_14 {
-    transform: rotateZ(0deg);
+    transform: rotateZ(100deg);
+    top: 260px;
+    left: -35px;
 }
 
 .Index_Box_15 {
-    transform: rotateZ(0deg);
+    transform: rotateZ(120deg);
+    top: 370px;
+    left: -145px;
 }
 
 .Index_Box_16 {
-    transform: rotateZ(0deg);
+    transform: rotateZ(140deg);
+    top: 460px;
+    left: -290px;
 }
 
 .Index_Box_17 {
-    transform: rotateZ(0deg);
-}
-
-.Index_Box_18 {
-    transform: rotateZ(0deg);
+    transform: rotateZ(160deg);
+    top: 520px;
+    left: -460px;
 }
