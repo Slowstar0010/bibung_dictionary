@@ -1,2 +1,11 @@
-@import "/Css/reset.css";
+@import url("reset.css");
 
+.Blue_flag {
+    height: 5rem;
+    width: 10rem;
+}
+
+.Module_img {
+    height: 16rem;
+    width: 8.5rem;
+}
