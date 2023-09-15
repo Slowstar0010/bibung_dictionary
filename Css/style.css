@@ -1,9 +1,10 @@
 @import url("reset.css");
 
 .Blue_flag {
+    margin-left: 30px;
+    margin-top: 10px;
     height: 5rem;
     width: 10rem;
-    margin: 10px;
 }
 
 .Module_title {
@@ -18,10 +19,18 @@
     font-size: x-large;
 }
 
+.Module_imgs {
+    display: flex;
+    justify-content: center;
+}
+
 .Module_img {
     height: 16rem;
-    width: 8.5rem;
-    margin-left: 6.5px;
+    width: 11.5rem;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 20px;
+    margin-bottom: 10px;
 }
 
 .Module_casual_imgs {
@@ -32,4 +41,13 @@
 .Module_casual_img {
     margin-left: 6px;
     margin-right: 3.5px;
+}
+
+.wip {
+    background-color: rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: x-large;
+    font-weight: bold;
 }
