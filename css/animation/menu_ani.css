@@ -1,0 +1,7 @@
+.Module_img {
+    cursor:pointer;
+}
+
+.Module_img:hover {
+    transform: scale(1.1);
+}
