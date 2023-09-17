@@ -24,9 +24,9 @@ function handleModuleImageClick(event) { // click event 발생시 발생하는 �
   const childElements = Array.from(parentArticle.querySelectorAll(".Module_img")); // 부모 요소 존재시 자식을 전부 변수에 저장
   const index = childElements.indexOf(clickedElement); //click evnet 발생시 해당 요소가 몇번째 index인지 변수에 저장
 
-  if (index !== -1) {
-    const moduleClassName = moduleClassArray[index];
-    clickedElement.classList.add(moduleClassName);
+  if (index !== -1) { // index 의 숫자가 0 이상일 시 함수를 실행
+    const moduleClassName = moduleClassArray[index]; // 미리 저장된 data_array중 필요한 array를 불러오고 변수에 저장
+    clickedElement.classList.add(moduleClassName); // moduleClassName으로 불러운 data를 class_name으로 추가 
     console.log("클릭된 요소의 인덱스:", index);
     console.log(clickedElement);
   } else {
