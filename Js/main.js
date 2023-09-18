@@ -10,15 +10,10 @@ function flip_div(event) {
     }
 
     styleElement.innerHTML = `
-        .${clickedClassName} {
-            transform: rotateY(180deg) rotateZ(90deg) scale(11);
-            transition: transform 1s ease;
-        }
-        .${clickedClassName}:hover {
-            transform: rotateY(180deg) rotateZ(90deg) scale(11);
-            transition: transform 1s ease;
-        }
+        
     `;
+
+
 }
 
 imgs.forEach(articleElement => articleElement.addEventListener("click", flip_div));
