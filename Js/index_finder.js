@@ -28,7 +28,6 @@ function handleModuleImageClick(event) { // click event 발생시 발생하는 �
     const moduleClassName = moduleClassArray[index]; // 미리 저장된 data_array중 필요한 array를 불러오고 변수에 저장
     clickedElement.classList.add(moduleClassName); // moduleClassName으로 불러운 data를 class_name으로 추가 
     console.log("클릭된 요소의 인덱스:", index);
-    console.log(clickedElement);
   } else {
     console.log("클릭된 요소가 부모 article 안에서 찾을 수 없음.");
   }
