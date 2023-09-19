@@ -10,10 +10,6 @@ ul {
     background-color: rgba(170, 170, 170, 0.8);
 }
 
-.Lecture_box {
-    
-}
-
 .Lecture_Container {
     display: flex;
     justify-content: space-around;
