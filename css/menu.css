@@ -37,6 +37,7 @@
 .Module_casual_img {
     margin-left: 15px;
     margin-right: 10px;
+    margin-bottom: 50px;
 }
 
 .wip {
@@ -46,4 +47,12 @@
     align-items: center;
     font-size: x-large;
     font-weight: bold;
+}
+
+.main_img {
+    border-top: 10px solid black;
+}
+
+.heli_imgs {
+    padding-bottom: 40px;
 }

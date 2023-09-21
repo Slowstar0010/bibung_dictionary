@@ -1,7 +1,18 @@
 .Module_img {
     cursor:pointer;
+    transition: 0.3s all ease-in-out;
 }
 
 .Module_img:hover {
+    transform: scale(1.18);
+}
+
+.Retune_Btn {
+    cursor: pointer;
+    transition: 1s all ease-in-out;
+}
+
+.Retune_Btn:hover {
     transform: scale(1.2);
+    background-color: rgba(0, 0, 0, 0.6);
 }

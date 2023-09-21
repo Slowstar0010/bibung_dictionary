@@ -4,6 +4,7 @@ ul {
 }
 
 .Lecture {
+    display: none;
     position: fixed;
     height: 100%;
     width: 100%;
@@ -33,6 +34,6 @@ ul {
     height: 50px;
     width: 50px;
     border-radius: 50%;
-    border:none;
-    background-color: rgba(170, 170, 170, 0.2);
+    border: rgba(0, 0, 0, 1);
+    background-color: rgba(255, 255, 255, 0.729);
 }
