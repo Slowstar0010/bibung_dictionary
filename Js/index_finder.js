@@ -3,7 +3,10 @@ const articleElements = document.querySelectorAll(".Module_imgs"); // Module_img
 const moduleClassArrays = { // 추후 새로운 모듈이 출시 될시 빠른 추가를 위해 기존 모듈 클래스명을 저장해놓음
   Module_imgs_1: ["F14", "F15E", "F16", "F18", "F86F", "F5", "F1"],
   Module_imgs_2: ["A10C", "AV8", "AJS37", "M2000"],
-  Module_casual_imgs: ["F15C", "A10A"]
+  Module_casual_imgs: ["F15C", "A10A"],
+  Module_Red_imgs: ["JF17", "MIG21", "MIG19", "MIG15"],
+  Module_Red_casual_imgs: ["MIG29", "SU33", "SU27", "SU25"],
+  Module_Heli_imgs: ["AH64", "UH1", "SA342", "KA50", "MI24", "MI8"]
 };
 
 function handleModuleImageClick(event) { // click event 발생시 발생하는 함수
