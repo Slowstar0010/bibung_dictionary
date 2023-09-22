@@ -9,6 +9,7 @@ const moduleClassArrays = { // 추후 새로운 모듈이 출시 될시 빠른 �
   Module_Heli_imgs: ["AH64", "UH1", "SA342", "KA50", "MI24", "MI8"]
 };
 
+
 function handleModuleImageClick(event) { // click event 발생시 발생하는 함수
   const clickedElement = event.target; // click evet 발생시 click 된 요소를 clickedElement 변수에 저장
   const parentArticle = clickedElement.closest("article.Module_imgs"); // closest을 사용하여 click 된 요소의 부모 요소를 변수에 저장
@@ -39,3 +40,4 @@ function handleModuleImageClick(event) { // click event 발생시 발생하는 �
 for (const articleElement of articleElements) {
   articleElement.addEventListener("click", handleModuleImageClick);
 }
+
