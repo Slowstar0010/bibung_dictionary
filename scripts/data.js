@@ -953,3 +953,21 @@ function Lectur_change_Text(clickedClassName) {
 };
 
 divs.forEach(div => div.addEventListener("click", flip_div));
+
+
+const lectures = [
+    {
+        className: "DCS-F14",
+        startUp: [
+            {title: '기체 스팩', link: "spec"},
+            {title: '시동 절차', link: "cold_start"},
+            {title: '계기&지상 주행', link: "texing"}
+        ]
+
+    },
+    {
+        className: "DCS-F15C",
+        startUp: []
+
+    }
+]
