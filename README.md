@@ -1,2 +1,2 @@
 # bibung_dictionary
-korean_DCS_World_Guide
+DCS Worlds 한국어 가이드

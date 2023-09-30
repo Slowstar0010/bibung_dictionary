@@ -1,8 +1,6 @@
 const imgs = document.querySelectorAll(".Module_imgs");
 let styleElement = null;
-
 const Retune_Btn = document.querySelector(".Retune_Btn")
-
 const Lecture_box = document.querySelectorAll(".Lecture_box")
 
 function flip_div(event) {
