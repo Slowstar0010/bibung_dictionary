@@ -47,7 +47,7 @@ const fetchHtmlWithXhr = (filename, tagname, target) => {
 }
 
 /** 
- *  fetch API를 이용한 방법
+ *  fetch API를 이용한 방법(미완)
  */
 
 const fetchHtmlWithFetchApi = (filename, tagname, target) => {
@@ -85,10 +85,10 @@ const fetchHtmlWithFetchApi = (filename, tagname, target) => {
 
 loadHtmlSequentially = async () => {
     try {
-       await fetchHtmlWithXhr('../html/BlueJet/jet.html', 'section.blue-jet', '#bibung-app') 
-       await fetchHtmlWithXhr('../html/RedJet/jet.html', 'section.red-jet', '#bibung-app') 
-       await fetchHtmlWithXhr('../html/Helicopter/heli.html', 'section.common-heli', '#bibung-app') 
+       await fetchHtmlWithXhr('../html/BlueJet.html', 'section.blue-jet', '#bibung-app') 
+       await fetchHtmlWithXhr('../html/RedJet.html', 'section.red-jet', '#bibung-app') 
+       await fetchHtmlWithXhr('../html/Helicopter.html', 'section.common-heli', '#bibung-app') 
     } catch (error) {
-        
+        throw Error(error);
     }
 }
