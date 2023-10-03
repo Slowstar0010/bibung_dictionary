@@ -37,12 +37,8 @@ function Retune_menu(event) {
 
     .${ClickedName}:hover {
         display: flex;
-    }
-
     }`;
 
     
 }
-
 imgs.forEach(articleElement => articleElement.addEventListener("click", flip_div));
-Retune_Btn.addEventListener("click", Retune_menu)
