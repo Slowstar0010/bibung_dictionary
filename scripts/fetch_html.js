@@ -13,7 +13,7 @@ const fetchHtmlWithXhr = (filename, tagname, target) => {
         }
 
     const xhr = new XMLHttpRequest();
-    xhr.open('GET', filename, true);    // xhr.opne(method, directory, resType)  
+    xhr.open('GET', filename, true);    // xhr.opne(method, directory, resType 여부)  
     xhr.responseType = 'text'           // responseType이 true를 줬기때문에 응답 형식을 text로해야함.
                                         // 기본 응답은 arrayBuffer , [2B, AB, 33, DD....]
 
@@ -33,9 +33,7 @@ const fetchHtmlWithXhr = (filename, tagname, target) => {
         
         } 
 
-
-
-        reject(new Error(`html태그를 로드하는 동안 오류가 발생했습니다. 상태:${xhr.status} `))
+        reject(new Error(`html태그를 로드하는 동안 오류가 발생했습니다. 상태:${xhr.status}`))
     }
 
     xhr.onerror = () => {
@@ -51,13 +49,7 @@ const fetchHtmlWithXhr = (filename, tagname, target) => {
  */
 
 const fetchHtmlWithFetchApi = (filename, tagname, target) => {
-    return new Promise((resolve, reject) => {
-        if(!filename || !target) {
-            reject(new Error())
-            return;
-        }
-
-        const url = '';
+    
     
         fetch(url)
             .then((res) => {
@@ -78,12 +70,15 @@ const fetchHtmlWithFetchApi = (filename, tagname, target) => {
                 resolve();
             })
 
-    })
+
 }
+/**
+ *  각 비동기 함수를 순서(동기적)으로 실행
+ * 
+ * 
+ */
 
-// 순차적으로 Load
-
-loadHtmlSequentially = async () => {
+const loadHtmlSequentially = async () => {
     try {
        await fetchHtmlWithXhr('../html/BlueJet.html', 'section.blue-jet', '#bibung-app') 
        await fetchHtmlWithXhr('../html/RedJet.html', 'section.red-jet', '#bibung-app') 
