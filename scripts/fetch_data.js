@@ -1,4 +1,6 @@
-/** 
+/**
+ *  Load HTML for XMLHttpRequest
+ *  
  * XMLHttpRequest를 이용한 방법
  * 
  * XMLHttpRequest는 Html에서 제공하는 API로 웹 브라우저와 웹 서버간에 데이터를교환할 수 있는 기능을 제공, AJAX
@@ -45,33 +47,34 @@ const fetchHtmlWithXhr = (filename, tagname, target) => {
 }
 
 /** 
- *  fetch API를 이용한 방법(미완)
+ *   Load HTML for Fetch
  */
 
-const fetchHtmlWithFetchApi = (filename, tagname, target) => {
-    
-    
-        fetch(url)
-            .then((res) => {
-                if(!res.ok) {
-                    reject()
-                    return;
-                }
-
-                return res.text();
-            })
-            .then((html) => {
-                const parser = new DOMParser();
-                const parsedDocument = parser.parseFromString(html, 'text/html');
-                const currTag = parsedDocument.querySelector(tagname);
-                const targetElement = document.querySelector(target);
-
-                targetElement.appendChild(currTag);
-                resolve();
-            })
-
-
-}
+const fetchHtmlWithFetchApi = (filedir, tagname, target) => {
+    return fetch(filedir)
+      .then((res) => {
+        if (!res.ok) {
+          throw new Error('fetch 에러');
+        }
+        return res.text();
+      })
+      .then((htmlText) => {
+        const parser = new DOMParser();
+        const parsedDocument = parser.parseFromString(htmlText, 'text/html');
+        const currTag = parsedDocument.querySelector(tagname);
+        const targetElement = document.querySelector(target);
+  
+        if (!currTag) {
+          throw new Error(`${currTag}를 찾을 수 없습니다.`);
+        }
+  
+        targetElement.appendChild(currTag);
+      })
+      .catch((e) => {
+        console.error(e);
+        throw new Error(e);
+      });
+  };
 /**
  *  각 비동기 함수를 순서(동기적)으로 실행
  * 
@@ -80,10 +83,11 @@ const fetchHtmlWithFetchApi = (filename, tagname, target) => {
 
 const loadHtmlSequentially = async () => {
     try {
-       await fetchHtmlWithXhr('../html/BlueJet.html', 'section.blue-jet', '#bibung-app') 
-       await fetchHtmlWithXhr('../html/RedJet.html', 'section.red-jet', '#bibung-app') 
-       await fetchHtmlWithXhr('../html/Helicopter.html', 'section.common-heli', '#bibung-app') 
+       await fetchHtmlWithFetchApi('../html/BlueJet.html', 'section.blue-jet', '#bibung-app') 
+       await fetchHtmlWithFetchApi('../html/RedJet.html', 'section.red-jet', '#bibung-app') 
+       await fetchHtmlWithFetchApi('../html/Helicopter.html', 'section.common-heli', '#bibung-app') 
     } catch (error) {
+        console.error(error)
         throw Error(error);
     }
 }

@@ -1,0 +1,115 @@
+{
+  "Basic" : [
+    {
+        "title": "기체 스펙", 
+        "type": "all"
+    },
+    {
+        "title": "시동 절차",
+        "type": "all"
+    },
+    {
+        "title": "계기 및 지상주행",
+        "type": "all" 
+    },
+    {
+        "title": "이륙 및 착륙",
+        "type": "all"
+    },
+    {
+        "title": "항법",
+        "type": "all" 
+    },
+    {
+        "title": "항공모함 이함 및 착함",
+        "type": "all" 
+    },
+    {
+        "title": "공중 급유",
+        "type": "all" 
+    },
+    {
+        "title": "편대 비행",
+        "type": "all" 
+    },
+    {
+        "title": "기만체 조작",
+        "type": "all"
+    },
+    {
+        "title": "라디오 조작방법",
+        "type": "all" 
+    }
+  ],
+  "근접교전, WVR" : [
+    {
+        "title": "기총(Cannon)",
+        "type": "all" 
+    },
+    {
+        "title": "근거리 미사일",
+        "type": "all" 
+    },
+    {
+        "title": "레이더 조작 방법",
+        "type": "all" 
+    }
+  ],
+  "장거리 교전, BVR": [
+    {
+        "title": "레이더 조작 방법",
+        "type": "all" 
+    },
+    {
+        "title": "IRST 조작 방법",
+        "type": "all" 
+    },
+    {
+        "title": "AIM-7 Sparrow",
+        "type": "Blue" 
+    }
+    ,
+    {
+        "title": "AIM-120 Amraam",
+        "type": "all" 
+    },
+    {
+        "title": "RWR",
+        "type": "all"
+    },
+    {
+        "title": "회피기동",
+        "type": "all"
+    }
+  ],
+  "지상 지원, CAS" : [
+    {
+        "title": "로켓(Roket)",
+        "type": "all"
+    },
+    {
+        "title": "타겟팅포드",
+        "type": "all"
+    },
+    {
+        "title": "AGM-65 Maverick",
+        "type": "blue"
+    },
+    {
+        "title": "AGM-88 Harm",
+        "type": "blue"
+    },
+    {
+        "title": "AGM-84 Harpoon",
+        "type": "blue"
+    },
+    {
+        "title": "JDAM",
+        "type": "blue"
+    },
+    {
+        "title": "GBU Series",
+        "type": "all"
+    }    
+  ]
+}

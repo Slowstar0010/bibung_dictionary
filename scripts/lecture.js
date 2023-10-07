@@ -19,7 +19,7 @@ function flip_div(event) {
     .${clickedClassName}:hover {
         display: none;
     }`;
-
+{}
     return ClickedName = clickedClassName
 
 }
