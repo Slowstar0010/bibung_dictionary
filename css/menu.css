@@ -14,12 +14,12 @@
     font-size: x-large;
 }
 
-.Module_imgs {
+.module_imgs {
     display: flex;
     justify-content: center;
 }
 
-.Module_img {
+.module_img {
     height: 16rem;
     width: 11.5rem;
     margin-left: 10px;
