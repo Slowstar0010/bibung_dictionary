@@ -1,3 +1,5 @@
+import { fetchModulesTree } from './main.js'
+
 /**
  *  Load HTML for XMLHttpRequest
  *  
@@ -50,7 +52,7 @@ const fetchHtmlWithXhr = (filename, tagname, target) => {
  *   Load HTML for Fetch
  */
 
-const fetchHtmlWithFetchApi = (filedir, tagname, target) => {
+const fetchHtmlWithFetchApi =  (filedir, tagname, target) => {
     return fetch(filedir)
       .then((res) => {
         if (!res.ok) {
@@ -75,19 +77,57 @@ const fetchHtmlWithFetchApi = (filedir, tagname, target) => {
         throw new Error(e);
       });
   };
+
+
+  /** 
+ *   Load HTML for Fetch Async ver
+ */
+  const fetchHtmlWithFetchApiAsync =  async (filedir, tagname, target) => {
+    try {
+    
+     const res = await fetch(filedir);
+     const htmltext = await res.text()
+     
+        const parser = new DOMParser();
+        const doc = parser.parseFromString(htmltext, 'text/html');
+
+        const currTag = doc.querySelector(tagname);
+        const targetElement = document.querySelector(target);
+  
+        if (!currTag) {
+          throw new Error(`${currTag}를 찾을 수 없습니다.`);
+        }
+  
+        targetElement.appendChild(currTag);
+
+      
+    } catch (error) {
+        
+    }
+  };
 /**
  *  각 비동기 함수를 순서(동기적)으로 실행
  * 
  * 
  */
 
-const loadHtmlSequentially = async () => {
-    try {
-       await fetchHtmlWithFetchApi('../html/BlueJet.html', 'section.blue-jet', '#bibung-app') 
-       await fetchHtmlWithFetchApi('../html/RedJet.html', 'section.red-jet', '#bibung-app') 
-       await fetchHtmlWithFetchApi('../html/Helicopter.html', 'section.common-heli', '#bibung-app') 
-    } catch (error) {
-        console.error(error)
-        throw Error(error);
-    }
-}
+        //  await fetchHtmlWithFetchApi('../layouts/BlueJet.html', 'section.blue-jet', '#bibung-app') 
+        // await fetchHtmlWithFetchApi('../layouts/RedJet.html', 'section.red-jet', '#bibung-app') 
+       //await fetchHtmlWithFetchApi('../layouts/Helicopter.html', 'section.common-heli', '#bibung-app') 
+      
+
+document.addEventListener('DOMContentLoaded', async () => {
+  try {
+    /* Html load */
+    await fetchHtmlWithFetchApiAsync('../layouts/Home/main.html', 'section.aircraft_container', '#bibung-app')
+ 
+
+    /* Js Load */
+    await fetchModulesTree();
+
+  } catch (error) {
+
+    console.error('index.js',error);
+    throw Error(error);
+  }
+})
