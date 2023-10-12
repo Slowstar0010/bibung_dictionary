@@ -60,21 +60,6 @@
          "name":"AJS37",
          "img_src":"../img/",
          "slug":"ajs37"
-      },
-      {
-         "name":"AJS37",
-         "img_src":"../img/",
-         "slug":""
-      },
-      {
-         "name":"MIG21",
-         "img_src":"../img/",
-         "slug":""
-      },
-      {
-         "name":"JF17",
-         "img_src":"../img/",
-         "slug":""
       }],
       "heli": [
          {
@@ -97,9 +82,39 @@
    "red" : {
       "jet":[     
       {
+         "name":"MIG15",
+         "img_src":"../img/",
+         "slug":"mig15"
+      },    
+      {
+         "name":"MIG19",
+         "img_src":"../img/",
+         "slug":"mig19"
+      },    
+      {
          "name":"MIG21",
          "img_src":"../img/",
          "slug":"mig21_bis"
+      },    
+      {
+         "name":"MIG29",
+         "img_src":"../img/",
+         "slug":"mig29"
+      },   
+      {
+         "name":"SU25",
+         "img_src":"../img/",
+         "slug":"su25"
+      },   
+      {
+         "name":"SU27",
+         "img_src":"../img/",
+         "slug":"su27"
+      },          
+      {
+         "name":"SU33",
+         "img_src":"../img/",
+         "slug":"su33"
       },    
       {
          "name":"JF17",
