@@ -1,128 +1,180 @@
-{ "aircraft": {
-   "blue": {
-      "jet": [ 
-      {
-         "name":"F1",
-         "img_src": "../img/",
-         "slug":"f1_mirage"
-      },
-      {
-         "name":"F86",
-         "img_src":"../img/",
-         "slug":"f86"
-      },
-      {
-         "name":"F14",
-         "img_src":"../img/",
-         "slug":"f14"
-      },
-      {
-         "name":"F15E",
-         "img_src":"../img/",
-         "slug":"f15e"
-      },
-      {
-         "name":"F16",
-         "img_src":"../img/",
-         "slug":"f16"
-      },
-      {
-         "name":"F18",
-         "img_src":"../img/",
-         "slug":"f18"
-      },
-      {
-         "name":"A10A",
-         "img_src":"../img/",
-         "slug":"a10a"
-      },
-      {
-         "name":"A10C",
-         "img_src":"../img/",
-         "slug":"a10c"
-      },
-      {
-         "name":"M2000C",
-         "img_src":"../img/",
-         "slug":"m2000c"
-      },
-      {
-         "name":"AV8B",
-         "img_src":"../img/",
-         "slug":"av8b"
-      },
-      {
-         "name":"F5E",
-         "img_src":"../img/",
-         "slug":"f5e"
-      },
-      {
-         "name":"AJS37",
-         "img_src":"../img/",
-         "slug":"ajs37"
-      },
-      {
-         "name":"AJS37",
-         "img_src":"../img/",
-         "slug":""
-      },
-      {
-         "name":"MIG21",
-         "img_src":"../img/",
-         "slug":""
-      },
-      {
-         "name":"JF17",
-         "img_src":"../img/",
-         "slug":""
-      }],
-      "heli": [
-         {
-            "name":"UH1",
-            "img_src":"../img/",
-            "slug":"uh1_huey"
-         },
-         {
-            "name":"AH64D",
-            "img_src":"../img/",
-            "slug":"ah64d_apache"
-         },
-         {
-            "name":"SA342",
-            "img_src":"../img/",
-            "slug":"sa342_gazelle"
-         }
-      ]
+"aircraft" : [
+   {
+       "name": "F1",
+       "img_src": "../assets/img/Module/Blue/F1.png",
+       "slug": "f1_mirage",
+       "team": "blue",
+       "type": "jet"
    },
-   "red" : {
-      "jet":[     
-      {
-         "name":"MIG21",
-         "img_src":"../img/",
-         "slug":"mig21_bis"
-      },    
-      {
-         "name":"JF17",
-         "img_src":"../img/",
-         "slug":"jf17_thunder"
-      }],
-      "heli": [
-         {
-            "name":"MI8",
-            "img_src":"../img/",
-            "slug":"mi8_mtv"
-         },
-         {
-            "name":"MI24P",
-            "img_src":"../img/",
-            "slug":"mi24p_hind"
-         },
-         {
-            "name":"KA50",
-            "img_src":"../img/",
-            "slug":"ka50_blackshark"
-         }
-      ]
-   }
-}
-}
+   {
+       "name": "F86",
+       "img_src": "../assets/img/Module/Blue/F86.png",
+       "slug": "f86",
+       "team": "blue",
+       "type": "jet"
+   },
+   {
+      "name": "F5",
+      "img_src": "../assets/img/Module/Blue/F5.png",
+      "slug": "f5",
+      "team": "blue",
+      "type": "jet"
+   },
+   {
+      "name": "F14",
+      "img_src": "../assets/img/Module/Blue/F14.png",
+      "slug": "f14",
+      "team": "blue",
+      "type": "jet"
+   },   
+   {
+      "name": "F15C",
+      "img_src": "../assets/img/Module/Blue/F15C.png",
+      "slug": "f15c",
+      "team": "blue",
+      "type": "jet"
+   },   
+   {
+      "name": "F15E",
+      "img_src": "../assets/img/Module/Blue/F15E.png",
+      "slug": "f15e",
+      "team": "blue",
+      "type": "jet"
+   },   
+   {
+      "name": "F16",
+      "img_src": "../assets/img/Module/Blue/F16.png",
+      "slug": "f16",
+      "team": "blue",
+      "type": "jet"
+   },   
+   {
+      "name": "F18",
+      "img_src": "../assets/img/Module/Blue/F18.png",
+      "slug": "f18",
+      "team": "blue",
+      "type": "jet"
+   },   
+   {
+      "name": "AV8",
+      "img_src": "../assets/img/Module/Blue/AV8.png",
+      "slug": "av8",
+      "team": "blue",
+      "type": "jet"
+   },   
+   {
+      "name": "A10A",
+      "img_src": "../assets/img/Module/Blue/A10A.png",
+      "slug": "a10a",
+      "team": "blue",
+      "type": "jet"
+   },   
+   {
+      "name": "A10C",
+      "img_src": "../assets/img/Module/Blue/A10C.png",
+      "slug": "a10c",
+      "team": "blue",
+      "type": "jet"
+   },  
+   {
+      "name": "M2000",
+      "img_src": "../assets/img/Module/Blue/M2000.png",
+      "slug": "m2000",
+      "team": "blue",
+      "type": "jet"
+   },   
+   {
+      "name": "MIG15",
+      "img_src": "../assets/img/Module/Red/MIG15.png",
+      "slug": "mig15",
+      "team": "red",
+      "type": "jet"
+   },  
+   {
+      "name": "MIG19",
+      "img_src": "../assets/img/Module/Red/MIG19.png",
+      "slug": "mig19",
+      "team": "red",
+      "type": "jet"
+   },  
+   {
+      "name": "MIG21",
+      "img_src": "../assets/img/Module/Red/MIG21.png",
+      "slug": "mig21",
+      "team": "red",
+      "type": "jet"
+   },  
+   {
+      "name": "SU25",
+      "img_src": "../assets/img/Module/Red/SU25.png",
+      "slug": "su25",
+      "team": "red",
+      "type": "jet"
+   },  
+   {
+      "name": "SU27",
+      "img_src": "../assets/img/Module/Red/SU27.png",
+      "slug": "su27",
+      "team": "red",
+      "type": "jet"
+   },  
+   {
+      "name": "SU33",
+      "img_src": "../assets/img/Module/Red/SU33.png",
+      "slug": "su33",
+      "team": "red",
+      "type": "jet"
+   }  
+   {
+      "name": "JF17",
+      "img_src": "../assets/img/Module/Red/JF17.png",
+      "slug": "jf17",
+      "team": "red",
+      "type": "jet"
+   },
+]
+
+"Helicoter" : [
+   {
+      "name": "AH64",
+      "img_src": "../assets/img/Module/Heli/AH64.png",
+      "slug": "ah64",
+      "team": "blue",
+      "type": "heli"
+  },
+  {
+      "name": "UH1",
+      "img_src": "../assets/img/Module/Heli/UH1.png",
+      "slug": "uh1",
+      "team": "blue",
+      "type": "heli"
+  },
+  {
+      "name": "SA342",
+      "img_src": "../assets/img/Module/Heli/SA342.png",
+      "slug": "sa342",
+      "team": "blue",
+      "type": "heli"
+  },
+  {
+      "name": "KA50",
+      "img_src": "../assets/img/Module/Heli/KA50.png",
+      "slug": "ka50",
+      "team": "red",
+      "type": "heli"
+  },
+  {
+      "name": "MI8",
+      "img_src": "../assets/img/Module/Heli/MI8.png",
+      "slug": "mi8",
+      "team": "red",
+      "type": "heli"
+  },
+  {
+      "name": "MI24",
+      "img_src": "../assets/img/Module/Heli/MI24.png",
+      "slug": "mi24",
+      "team": "red",
+      "type": "heli"
+  },
+]
